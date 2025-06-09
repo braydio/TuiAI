@@ -4,9 +4,9 @@ import chromadb
 from chromadb.errors import ChromaError, IDAlreadyExistsError
 
 # Constants
-SOURCE_DIR = "backend"
+SOURCE_DIR = "documents"
 EXCLUDE_DIRS = {".venv", "__pycache__"}
-COLLECTION_NAME = "pynance-code"
+COLLECTION_NAME = "documents_collection"
 
 print("[CHROMA] Connecting to Chroma server at http://localhost:8055")
 client = chromadb.HttpClient(host="localhost", port=8055)
