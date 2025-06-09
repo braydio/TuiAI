@@ -8,7 +8,7 @@ import json
 from chromadb.errors import ChromaError
 
 # Defaults
-DEFAULT_COLLECTION = os.getenv("CHROMA_COLLECTION", "pynance-code")
+DEFAULT_COLLECTION = os.getenv("CHROMA_COLLECTION", "documents_collection")
 DEFAULT_COUNT = int(os.getenv("CHROMA_RESULT_COUNT", 3))
 DEFAULT_HOST = os.getenv("CHROMA_HOST", "localhost")
 DEFAULT_PORT = int(os.getenv("CHROMA_PORT", 8055))
